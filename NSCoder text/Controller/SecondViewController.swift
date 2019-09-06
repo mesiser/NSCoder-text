@@ -18,7 +18,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet var textField: UITextField!
     @IBOutlet var oldMessagesTableView: UITableView!
     var messageReceived = ""//Эту переменную необходимо изпользовать, чтобы передавать послания из первого VC во второй. Если передавать их напрямую в text.text, то Xcode считает при отправке, что text.text еще не существует (не видит его) и говорит: unexpectidly found nil.
-    var oldMessages = Array<String>()
+    var oldMessages = [OldMessagesSent]()
     
     
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellTwo", for: indexPath)
-        cell.textLabel?.text = oldMessages[indexPath.row]
+        cell.textLabel?.text = oldMessages[indexPath.row].text
         return cell
     }
 

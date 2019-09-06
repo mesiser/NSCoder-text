@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD31BC532322127500558203 /* OldMessagesReceived.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31BC522322127500558203 /* OldMessagesReceived.swift */; };
+		DD40525623220BAB007430A3 /* OldMessagesSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40525523220BAB007430A3 /* OldMessagesSent.swift */; };
 		DD9B67BE2321E00800D3FAD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67BD2321E00800D3FAD4 /* AppDelegate.swift */; };
 		DD9B67C32321E00800D3FAD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67C12321E00800D3FAD4 /* Main.storyboard */; };
 		DD9B67C52321E00900D3FAD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67C42321E00900D3FAD4 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD31BC522322127500558203 /* OldMessagesReceived.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldMessagesReceived.swift; sourceTree = "<group>"; };
+		DD40525523220BAB007430A3 /* OldMessagesSent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldMessagesSent.swift; sourceTree = "<group>"; };
 		DD9B67BA2321E00800D3FAD4 /* NSCoder text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSCoder text.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9B67BD2321E00800D3FAD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9B67C22321E00800D3FAD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD40525A23220BCE007430A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD40525523220BAB007430A3 /* OldMessagesSent.swift */,
+				DD31BC522322127500558203 /* OldMessagesReceived.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD40525B23220BDC007430A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B67BD2321E00800D3FAD4 /* AppDelegate.swift */,
+				DDD547152321F10700D1870B /* FirstViewController.swift */,
+				DDD547132321F0E600D1870B /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD40525C23220BEC007430A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B67C12321E00800D3FAD4 /* Main.storyboard */,
+				DD9B67C62321E00900D3FAD4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DD9B67B12321E00800D3FAD4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +88,10 @@
 		DD9B67BC2321E00800D3FAD4 /* NSCoder text */ = {
 			isa = PBXGroup;
 			children = (
-				DD9B67BD2321E00800D3FAD4 /* AppDelegate.swift */,
-				DDD547152321F10700D1870B /* FirstViewController.swift */,
-				DDD547132321F0E600D1870B /* SecondViewController.swift */,
-				DD9B67C12321E00800D3FAD4 /* Main.storyboard */,
+				DD40525A23220BCE007430A3 /* Model */,
+				DD40525C23220BEC007430A3 /* View */,
+				DD40525B23220BDC007430A3 /* Controller */,
 				DD9B67C42321E00900D3FAD4 /* Assets.xcassets */,
-				DD9B67C62321E00900D3FAD4 /* LaunchScreen.storyboard */,
 				DD9B67C92321E00900D3FAD4 /* Info.plist */,
 			);
 			path = "NSCoder text";
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD31BC532322127500558203 /* OldMessagesReceived.swift in Sources */,
 				DDD547142321F0E600D1870B /* SecondViewController.swift in Sources */,
+				DD40525623220BAB007430A3 /* OldMessagesSent.swift in Sources */,
 				DD9B67BE2321E00800D3FAD4 /* AppDelegate.swift in Sources */,
 				DDD547162321F10700D1870B /* FirstViewController.swift in Sources */,
 			);
