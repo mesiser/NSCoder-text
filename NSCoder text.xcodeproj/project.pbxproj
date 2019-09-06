@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		DD9B67BE2321E00800D3FAD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67BD2321E00800D3FAD4 /* AppDelegate.swift */; };
-		DD9B67C02321E00800D3FAD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B67BF2321E00800D3FAD4 /* ViewController.swift */; };
 		DD9B67C32321E00800D3FAD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67C12321E00800D3FAD4 /* Main.storyboard */; };
 		DD9B67C52321E00900D3FAD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67C42321E00900D3FAD4 /* Assets.xcassets */; };
 		DD9B67C82321E00900D3FAD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9B67C62321E00900D3FAD4 /* LaunchScreen.storyboard */; };
+		DDD547142321F0E600D1870B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD547132321F0E600D1870B /* SecondViewController.swift */; };
+		DDD547162321F10700D1870B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD547152321F10700D1870B /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD9B67BA2321E00800D3FAD4 /* NSCoder text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSCoder text.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9B67BD2321E00800D3FAD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD9B67BF2321E00800D3FAD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD9B67C22321E00800D3FAD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD9B67C42321E00900D3FAD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD9B67C72321E00900D3FAD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD9B67C92321E00900D3FAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD547132321F0E600D1870B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DDD547152321F10700D1870B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				DD9B67BD2321E00800D3FAD4 /* AppDelegate.swift */,
-				DD9B67BF2321E00800D3FAD4 /* ViewController.swift */,
+				DDD547152321F10700D1870B /* FirstViewController.swift */,
+				DDD547132321F0E600D1870B /* SecondViewController.swift */,
 				DD9B67C12321E00800D3FAD4 /* Main.storyboard */,
 				DD9B67C42321E00900D3FAD4 /* Assets.xcassets */,
 				DD9B67C62321E00900D3FAD4 /* LaunchScreen.storyboard */,
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9B67C02321E00800D3FAD4 /* ViewController.swift in Sources */,
+				DDD547142321F0E600D1870B /* SecondViewController.swift in Sources */,
 				DD9B67BE2321E00800D3FAD4 /* AppDelegate.swift in Sources */,
+				DDD547162321F10700D1870B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shalugin.NSCoder-text";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shalugin.NSCoder-text";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
