@@ -13,7 +13,8 @@ class FirstViewController: UIViewController, messageSentBack, UITableViewDelegat
     @IBOutlet var text: UILabel!
     @IBOutlet var textField: UITextField!
     @IBOutlet var oldMessagesTableView: UITableView!
-    var oldMessages = [String]()
+    var oldMessagesSent = [String]()//Массив старых сообщений для второго VC. Необходимо хранить здесь, т.к. при каждом segue второй VC создается заново и ничего в нем хранить нельзя.
+    var oldMessagesReceived = [String]()
     
     
     override func viewDidLoad() {
@@ -29,21 +30,28 @@ class FirstViewController: UIViewController, messageSentBack, UITableViewDelegat
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! SecondViewController
         destinationVC.messageReceived = textField.text!
+        oldMessagesSent.append(textField.text!)
+        destinationVC.oldMessages = oldMessagesSent
+        textField.text = ""
+        textField.endEditing(true)
         destinationVC.delegate = self
     }
     
     func message(textSentBack: String) {
         text.text = textSentBack
+        oldMessagesReceived.append(textSentBack)
+        oldMessagesTableView.reloadData()
     }
     
     // Табличка
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return oldMessages.count
+        return oldMessagesReceived.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellOne", for: indexPath)
+        cell.textLabel?.text = oldMessagesReceived[indexPath.row]
         return cell
     }
     

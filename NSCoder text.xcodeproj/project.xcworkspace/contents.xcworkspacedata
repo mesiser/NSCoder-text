@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NSCoder text.xcodeproj">
+      location = "self:/Users/vadim/Documents/developers/NSCoder text/NSCoder text.xcodeproj">
    </FileRef>
 </Workspace>

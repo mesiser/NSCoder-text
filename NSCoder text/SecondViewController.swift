@@ -37,6 +37,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellTwo", for: indexPath)
+        cell.textLabel?.text = oldMessages[indexPath.row]
         return cell
     }
 
